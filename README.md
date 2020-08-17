@@ -27,6 +27,13 @@ Fortran - Decisions
   - 1 IF
   - 2 Select case
 
+Fortran - Loops
+  - 1 Loop Type & Description (do loop)
+  - 2 Loop Control Statements
+
+Fortran - Numbers
+
+
 
 
 
