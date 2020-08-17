@@ -11,4 +11,7 @@ program helloworld
     ! hello world
     print *, 'Hello world!'
 
+    
+    call system("PAUSE")
+
 end program helloworld
