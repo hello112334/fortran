@@ -24,7 +24,7 @@ subroutine fillArray(a)
     print *, " ----------- fillArray ----------- "
 
     do i = 1, 5
-        a(i) = i * 2.0
+        a(i) = i * 2
     end do
 
 end subroutine fillarray    
