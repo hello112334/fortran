@@ -114,3 +114,117 @@ Fortran - Pointers
   - real, pointer, dimension (:) :: pra ! pointer to 1-dim real array  
   - real, pointer, dimension (:,:) :: pra2 ! pointer to 2-dim real array
 
+Fortran - Basic Input Output
+  - read(*,*) item1, item2, item3...
+  - print *, item1, item2, item3
+  - write(*,*) item1, item2, item3...
+
+Formatted Input Output
+----------------------------------------------------------------------------------------------------------
+- I	→ integer
+  - Target: This is used for integer output. 
+  - Format: ‘rIw.m’
+  - Rule: If the ﬁeld width is not large enough to accommodate an integer then the ﬁeld is ﬁlled with asterisks.
+   
+- F	→ real number
+  - Target: This is used for real number output. 
+  - Format: ‘rFw.d’
+  - Rule: If the ﬁeld width is not large enough to accommodate the real number then the ﬁeld is ﬁlled with asterisks.
+
+- E	→ real output (exponential notation)
+  - Target: This is used for real output in exponential notation. 
+  - Format: rEw.d
+  - Rule: In general, w ≥ d + 7.
+
+- ES → real output (scientific notation)
+  - Target: This is used for real output (scientific notation).
+  - Format: ‘rESw.d’
+  - Rule: expressionw ≥ d + 7
+
+- A	→ character
+  - Target: This is used for character output.
+  - Format: ‘rAw’
+  - Rule: If the ﬁeld width is not large enough to accommodate the character string then the ﬁeld is ﬁlled with the ﬁrst ‘w’ characters of the string.
+
+- X	→ space
+  - Target: his is used for space output. 
+  - Format: ‘nX’
+  - Rule: ‘n’ is the number of desired spaces.
+
+- /	→ blank lines.
+  - Target: Slash descriptor – used to insert blank lines.
+  - Format: ‘/’
+  - Rule: the next data output to be on a new line.
+
+- Symbol & Description
+  - c: Column number
+  - d: Number of digits to right of the decimal place for real input or output
+  - m: Minimum number of digits to be displayed
+  - n: Number of spaces to skip
+  - r: Repeat count – the number of times to use a descriptor or group of descriptors
+  - w: Field width – the number of characters to use for the input or output
+----------------------------------------------------------------------------------------------------------
+
+
+Fortran - File Input Output
+  - open (unit = number, file = "name").
+
+Specifier & Description
+----------------------------------------------------------------------------------------------------------
+  - 1	[UNIT=] u
+      The unit number u could be any number in the range 9-99 and it indicates the file, you may choose any number but every open file in the program must have a unique number
+
+  - 2	IOSTAT= ios
+      It is the I/O status identifier and should be an integer variable. If the open statement is successful then the ios value returned is zero else a non-zero value.
+
+  - 3	ERR = err
+      It is a label to which the control jumps in case of any error.
+
+  - 4	FILE = fname
+      File name, a character string.
+
+  - 5	STATUS = sta
+      It shows the prior status of the file. A character string and can have one of the three values NEW, OLD or SCRATCH. A scratch file is created and deleted when closed or the program ends.
+
+  - 6	ACCESS = acc
+      It is the file access mode. Can have either of the two values, SEQUENTIAL or DIRECT. The default is SEQUENTIAL.
+
+  - 7	FORM = frm
+      It gives the formatting status of the file. Can have either of the two values FORMATTED or UNFORMATTED. The default is UNFORMATTED
+
+  - 8	RECL = rl
+      It specifies the length of each record in a direct access file.
+----------------------------------------------------------------------------------------------------------
+
+  - read ([UNIT = ]u, [FMT = ]fmt, IOSTAT = ios, ERR = err, END = s)
+  - write([UNIT = ]u, [FMT = ]fmt, IOSTAT = ios, ERR = err, END = s)
+
+Fortran - Procedures
+  - function
+  function name(arg1, arg2, ....) result (return_var_name)  
+     [declarations, including those for the arguments]   
+     [executable statements] 
+  end function [name]
+
+  - subroutine
+  subroutine name(arg1, arg2, ....)    
+     [declarations, including those for the arguments]    
+     [executable statements]  
+  end subroutine [name]
+
+
+Fortran - Modules
+
+
+
+
+
+
+
+
+
+
+
+
+
+
