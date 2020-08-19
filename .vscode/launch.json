@@ -6,7 +6,7 @@
             "type": "cppdbg",
             "request": "launch",
             "targetArchitecture": "x86",
-            "program": "${workspaceRoot}\\${fileBasenameNoExtension}.exe",
+            "program": "${workspaceRoot}\\EXE\\${fileBasenameNoExtension}.exe",
             "miDebuggerPath": "C:\\Strawberry\\c\\bin\\gdb.exe",
             "args": [],
             "stopAtEntry": false,

@@ -87,9 +87,30 @@ Fortran - Arrays
   - real, dimension(5) :: numbers
 
 
+Array Intrinsic Functions
+----------------------------------------------------------
+  - Vector and matrix multiplication
+  - Reduction
+  - Inquiry
+  - Construction
+  - Reshape
+  - Manipulation
+  - Location
+----------------------------------------------------------
+
+Fortran - Dynamic Arrays
+  - real, dimension (:,:), allocatable :: darray   
 
 
+Fortran - Derived Data Types
+  - Title
+  - Author
+  - Subject
+  - Book ID
 
 
-
+Fortran - Pointers
+  - integer, pointer :: p1 ! pointer to integer  
+  - real, pointer, dimension (:) :: pra ! pointer to 1-dim real array  
+  - real, pointer, dimension (:,:) :: pra2 ! pointer to 2-dim real array
 
